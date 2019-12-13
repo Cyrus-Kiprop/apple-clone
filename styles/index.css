@@ -15,13 +15,21 @@ footer p {
   width: auto;
   font-size: 10px;
   padding: 15px;
+  color: #6e6e6e;
+  font-family:
+    "Lucida Grande",
+    "Lucida Sans Unicode",
+    Helvetica,
+    Arial,
+    Verdana,
+    sans-serif;
 }
 
 footer div p,
 ul {
-  padding: 15px;
+  /* padding: 15px; */
   display: flex;
-  font-size: 10px;
+  font-size: 9px;
   line-height: 12px;
 }
 
@@ -57,6 +65,10 @@ header ul li a {
 
 footer div p a {
   padding: 0 3px 0 3px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer p:last-child a {
@@ -221,7 +233,8 @@ main {
 main ul {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+
+  /* justify-content: space-between; */
   flex-direction: row;
 }
 
@@ -232,8 +245,9 @@ main ul li {
 
 footer div {
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
+  align-items: flex-start;
 }
 
 main ul li:first-child div {
@@ -269,7 +283,7 @@ main ul li:last-child div {
 }
 
 footer {
-  margin: 0 185.5px;
+  margin: auto;
   padding: 10px 26px;
   display: flex;
   flex-direction: column;
@@ -278,12 +292,17 @@ footer {
 footer div ul {
   display: flex;
   align-items: center;
+  padding-top: 15px;
 }
 
 footer div ul li {
   padding-left: 6px;
   margin-left: 6px;
   border-left: 1px rgb(168, 166, 166) solid;
+}
+
+footer div ul li:first-child {
+  border: none;
 }
 
 footer div ul li:last-child a {
@@ -300,4 +319,23 @@ footer p:last-child a:first-child::after {
   border-right: 1px solid gray;
   margin: 0 3px 0 3px;
   line-height: 8px;
+}
+
+.copyright {
+  align-self: center;
+  padding-top: 0;
+}
+
+.policy-container {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+}
+
+.policy-container p {
+  align-self: flex-start;
+}
+
+.policy-container > p {
+  margin-right: 50px;
 }
