@@ -5,8 +5,24 @@ header {
   flex-direction: column;
   align-items: center;
   flex: 1 1 auto;
-  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg)
+  background:
+    url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg)
     50% 100% no-repeat;
+}
+
+footer p {
+  display: flex;
+  width: auto;
+  font-size: 10px;
+  padding: 15px;
+}
+
+footer div p,
+ul {
+  padding: 15px;
+  display: flex;
+  font-size: 10px;
+  line-height: 12px;
 }
 
 header ul {
@@ -18,29 +34,36 @@ header ul {
   align-items: center;
 }
 
+footer div a {
+  color: #08c;
+}
+
 header ul li a {
-  background-position: 0 0;
   border: 0.5px solid #626060;
   display: flex;
   align-items: center;
-
   outline: none;
-  background: rgb(125, 125, 125);
-  background: linear-gradient(
-    180deg,
-    rgba(125, 125, 125, 1) 50%,
-    rgba(106, 106, 106, 1) 50%,
-    rgba(100, 100, 100, 1) 100%,
-    rgba(38, 41, 42, 1) 100%
-  );
-
+  background:
+    linear-gradient(
+      180deg,
+      rgba(125, 125, 125, 1) 50%,
+      rgba(106, 106, 106, 1) 50%,
+      rgba(100, 100, 100, 1) 100%,
+      rgba(38, 41, 42, 1) 100%
+    );
   width: auto;
   height: 36px;
 }
 
-header ul li a:hover,
-a:visited,
-a:active {
+footer div p a {
+  padding: 0 3px 0 3px;
+}
+
+footer p:last-child a {
+  color: #08c;
+}
+
+header ul li a:hover {
   background: rgb(59, 59, 59);
 }
 
@@ -53,75 +76,115 @@ header ul li a span {
   height: 30px;
 }
 
+nav a:first-child span {
+  margin-top: -19px;
+  width: 980px;
+  height: 104px;
+  background:
+    url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/your_verse_title_small.png)
+    0 98% no-repeat;
+}
+
+nav a:nth-child(2) span {
+  margin-top: -10px;
+  margin-bottom: 30px;
+  width: 980px;
+  height: 82px;
+  background:
+    url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/your_verse_subhead_small.png)
+    0 0 no-repeat;
+}
+
+nav a:last-child span {
+  height: 25px;
+  width: 980px;
+  background:
+    url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt.png)
+    0 0 no-repeat;
+}
+
 header ul li:first-child a span {
-  background: url(http://images.apple.com/global/nav/images/globalnav_text.png)
+  background:
+    url(http://images.apple.com/global/nav/images/globalnav_text.png)
     no-repeat 50% 0;
 }
 
 header ul li:nth-child(2) a span {
   border-radius: 0 4px 4px 0;
-  background: url(http://images.apple.com/global/nav/images/globalnav_text.png)
+  background:
+    url(http://images.apple.com/global/nav/images/globalnav_text.png)
     no-repeat 50% -30px;
 }
 
 header ul li:nth-child(3) a span {
   border-radius: 0 4px 4px 0;
-
-  background: url(http://images.apple.com/global/nav/images/globalnav_text.png)
+  background:
+    url(http://images.apple.com/global/nav/images/globalnav_text.png)
     no-repeat 50% -60px;
 }
+
 header ul li:nth-child(4) a span {
   border-radius: 0 4px 4px 0;
-
-  background: url(http://images.apple.com/global/nav/images/globalnav_text.png)
+  background:
+    url(http://images.apple.com/global/nav/images/globalnav_text.png)
     no-repeat 50% -90px;
 }
+
 header ul li:nth-child(5) a span {
   border-radius: 0 4px 4px 0;
-  background: url(http://images.apple.com/global/nav/images/globalnav_text.png)
+  background:
+    url(http://images.apple.com/global/nav/images/globalnav_text.png)
     no-repeat 50% -120px;
 }
 
 header ul li:nth-child(6) a span {
   border-radius: 0 4px 4px 0;
-
-  background: url(http://images.apple.com/global/nav/images/globalnav_text.png)
+  background:
+    url(http://images.apple.com/global/nav/images/globalnav_text.png)
     no-repeat 50% -150px;
 }
+
 header ul li:nth-child(7) a span {
   border-radius: 0 4px 4px 0;
-
-  background: url(http://images.apple.com/global/nav/images/globalnav_text.png)
+  background:
+    url(http://images.apple.com/global/nav/images/globalnav_text.png)
     no-repeat 50% -180px;
 }
+
 header ul li:nth-child(8) a span {
   border-radius: 0 4px 4px 0;
-  background: url(http://images.apple.com/global/nav/images/globalnav_text.png)
+  background:
+    url(http://images.apple.com/global/nav/images/globalnav_text.png)
     no-repeat 50% -210px;
 }
-header ul li:last-child form {
-  border-radius: 0 4px 4px 0;
+
+nav a:last-child span:hover {
+  height: 30px;
+  width: 980px;
+  background:
+    url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt.png)
+    0 100% no-repeat;
 }
 
 header ul li:last-child form {
-  background: rgb(125, 125, 125);
+  border-radius: 0 4px 4px 0;
   display: flex;
   border: 0.5px solid #626060;
   align-items: center;
-  background: linear-gradient(
-    180deg,
-    rgba(125, 125, 125, 1) 50%,
-    rgba(106, 106, 106, 1) 50%,
-    rgba(100, 100, 100, 1) 100%,
-    rgba(38, 41, 42, 1) 100%
-  );
+  background:
+    linear-gradient(
+      180deg,
+      rgba(125, 125, 125, 1) 50%,
+      rgba(106, 106, 106, 1) 50%,
+      rgba(100, 100, 100, 1) 100%,
+      rgba(38, 41, 42, 1) 100%
+    );
   width: auto;
   height: 36px;
   flex: 1 1 auto;
 }
 
 header ul li:last-child form input[type="text"] {
-  background: transparent;
   color: black;
   border-radius: 20px;
   box-sizing: border-box;
@@ -130,7 +193,8 @@ header ul li:last-child form input[type="text"] {
   border: 1px solid rgba(100, 100, 100, 1);
   width: 106px;
   padding: 2px 20px;
-  background: url(http://images.apple.com/global/nav/images/globalsearch_field.png)
+  background:
+    url(http://images.apple.com/global/nav/images/globalsearch_field.png)
     0 0 no-repeat;
   transition-property: width;
   transition-duration: 0.4s;
@@ -144,40 +208,10 @@ header ul li:last-child form input[type="text"]:focus {
 
 header nav {
   padding: 50px 0;
-  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_scrim.png)
+  background:
+    url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_scrim.png)
     0 50% repeat-x;
   background-size: 25px 335px;
-}
-
-nav a:first-child span {
-  margin-top: -19px;
-  width: 980px;
-  height: 104px;
-  background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/your_verse_title_small.png)
-    0 98% no-repeat;
-}
-
-nav a:nth-child(2) span {
-  margin-top: -10px;
-  margin-bottom: 30px;
-  width: 980px;
-  height: 82px;
-  background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/your_verse_subhead_small.png)
-    0 0 no-repeat;
-}
-
-nav a:last-child span {
-  height: 25px;
-  width: 980px;
-  background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt.png)
-    0 0 no-repeat;
-}
-
-nav a:last-child span:hover {
-  height: 30px;
-  width: 980px;
-  background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/cta_your_verse_27pt.png)
-    0 100% no-repeat;
 }
 
 main {
@@ -190,23 +224,26 @@ main ul {
   justify-content: space-between;
   flex-direction: row;
 }
-/* Don't use absolute values like pixels if you want to make it responsive ******************/
+
 main ul li {
   width: 100%;
   height: 100%;
 }
 
-main ul li:first-child div {
-  /* Here i needed to adjust the background styling and identation, it is better to use "background-image" when working directly with images. *************************/
-  height: 200px;
-  /* Again, use it relative positioning like VW or % */
+footer div {
   width: 100%;
-  /* Needed to change to background-image to adjust it better */
+  justify-content: space-between;
+  display: flex;
+}
+
+main ul li:first-child div {
+  height: 200px;
+  width: 100%;
   background-image: url("https://web.archive.org/web/20140301004610im_/http://images.apple.com/home/images/promo_iphone5s.jpg");
-  /* This means that the image will ocupy the whole container */
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
 main ul li:nth-child(2) div {
   height: 200px;
   width: 100%;
@@ -232,32 +269,10 @@ main ul li:last-child div {
 }
 
 footer {
-  margin: 0px 185.5px;
+  margin: 0 185.5px;
   padding: 10px 26px;
   display: flex;
   flex-direction: column;
-}
-
-footer div {
-  width: 100%;
-  justify-content: space-between;
-  display: flex;
-}
-
-footer div p,
-ul {
-  padding: 15px;
-  display: flex;
-  font-size: 10px;
-  line-height: 12px;
-}
-
-footer div p a,
-ul a {
-  color: #0088cc;
-}
-footer div p a {
-  padding: 0 3px 0 3px;
 }
 
 footer div ul {
@@ -268,33 +283,20 @@ footer div ul {
 footer div ul li {
   padding-left: 6px;
   margin-left: 6px;
-}
-footer div ul li {
   border-left: 1px rgb(168, 166, 166) solid;
 }
 
 footer div ul li:last-child a {
   height: 16px;
   width: 16px;
-  background: url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/global/elements/flags/16x16/usa.png)
+  background:
+    url(https://web.archive.org/web/20140301004610im_/http://images.apple.com/global/elements/flags/16x16/usa.png)
     0 0 no-repeat;
-}
-
-footer p {
-  display: flex;
-  width: auto;
-  font-size: 10px;
-  padding: 15px;
-}
-
-footer p:last-child a {
-  color: #0088cc;
 }
 
 footer p:last-child a:first-child::after {
   content: "";
   width: 0.5px;
-
   border-right: 1px solid gray;
   margin: 0 3px 0 3px;
   line-height: 8px;
