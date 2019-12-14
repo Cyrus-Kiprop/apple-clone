@@ -227,11 +227,13 @@ header nav {
 
 main {
   width: 100%;
+  flex: 1 1 auto;
 }
 
 main ul {
   width: 100%;
   display: flex;
+  flex-grow: 0;
   flex-direction: row;
 }
 
